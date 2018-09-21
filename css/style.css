@@ -8,6 +8,14 @@ body
 	padding-left:10%;
 	padding-right:10%;
 }
+@media (max-width: 850px)
+{
+	.pads
+	{
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+}
 .navigation
 {
 	padding: 0px;
