@@ -111,9 +111,43 @@ body
 .below-nav
 {
 	background-color: #1e1e1e;
-	height: 50px;
+	height: 56px;
 	width: 100%;
+	display: flex;
+	flex-wrap: nowrap;
+	overflow-x: scroll;
 }
+
+.scroller::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 3px rgba(0,0,0,0.3);
+	border-radius: 20px;
+	background-color: #F5F5F5;
+}
+
+.scroller::-webkit-scrollbar
+{
+	width: 6px;
+	height:6px;
+	background-color: #F5F5F5;
+}
+
+.scroller::-webkit-scrollbar-thumb
+{
+	border-radius: 20px;
+	-webkit-box-shadow: inset 0 0 3px rgba(0,0,0,.3);
+	background-color: #555;
+}
+#news, #facebook, #twitter, #youtube, #instagram,
+#news-1, #facebook-1, #twitter-1, #youtube-1, #instagram-1, 
+#news-2, #facebook-2, #twitter-2, #youtube-2, #instagram-2, 
+#news-3, #facebook-3, #twitter-3, #youtube-3, #instagram-3, 
+#news-4, #facebook-4, #twitter-4, #youtube-4, #instagram-4, 
+#news-5, #facebook-5, #twitter-5, #youtube-5, #instagram-5
+{
+	display: none;
+}
+
 .navigator-button
 {
 	margin-left:5px;
@@ -125,6 +159,7 @@ body
 	font-size: 18px;
 	color: #ffffff;
 	cursor: pointer;
+	float: left;
 	background-color: transparent;
 }
 .navigator-button:hover
@@ -150,6 +185,10 @@ body
 	padding-left: 15px;
 	padding-right: 15px;
 }
+.cursor-hover
+{
+	cursor: pointer;
+}
 .videoWrapper {
 	position: relative;
 	padding-bottom: 56.25%; /* 16:9 */
@@ -165,9 +204,11 @@ body
 }
 .mini-list-images
 {
-	width: 100%;
-	max-width: 80px;
+	width: 80px;
 	height: auto;
+	float: left;
+	margin-right: 8px;
+	margin-bottom: 8px;
 }
 .after-container
 {
@@ -184,6 +225,7 @@ body
 .less-line-space
 {
 	line-height: 16px;
+	float: left;
 }
 .three-images
 {
