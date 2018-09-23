@@ -55,6 +55,17 @@ body
 	-moz-transition: 0.3s;
 	-o-transition: 0.3s;
 }
+.phone-nav
+{
+	background-color: #121212;
+	color: #ffffff;
+	width: 100%;
+	display: flex;
+	flex-wrap: nowrap;
+	height: 50px;
+	border-bottom: 1px solid #fff;
+	overflow-x: scroll;
+}
 .nav-2
 {
 	background-color: #1e1e1e;
@@ -291,8 +302,68 @@ body
 {
 	background-color: #000;
 	width: 100%;
-	height: 40px;
+	min-height: 40px;
+	height: auto;
 	font-size: 17px;
 	color: #eee;
 	padding-top: 10px;
+}
+.fixed
+{
+	position: fixed;
+	bottom: 10px;
+	right: 10px;
+}
+.top
+{
+	height:46px;
+	width: 46px;
+	border-radius: 3px;
+	background-color: lightblue;
+	color: #202020;
+	text-align: center;
+	cursor: pointer;
+	font-weight: 600;
+	border:1px solid #202020;
+	float: right;
+	margin-bottom: 10px;
+}
+.scrollup
+{
+	display: none;
+}
+.total-query
+{
+	width:250px;
+	height:65px;
+	float: right;
+}
+.query
+{
+	height:46px;
+	width:46px;
+	border-radius: 3px;
+	cursor: pointer;
+	background-color: lightgreen;
+	color: #202020;
+	float: right;
+	text-align: center;
+	font-weight: 600;
+	font-size: 27px;
+	border:1px solid #000;
+	padding-top: 4px;
+	margin-top: 3px;
+}
+.temp-query
+{
+	border:1px solid #000;
+	background-color: #eee;
+	color: #000;
+	margin-top:3px;
+	border-radius: 3px;
+	padding:10px;
+	display: none;
+	width:190px;
+	font-size: 17px;
+	float:left;
 }

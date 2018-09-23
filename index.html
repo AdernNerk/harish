@@ -17,26 +17,63 @@
 		<button class="search-submit">
 			<i class="fa fa-search"></i>
 		</button>
-		<div class="w3-right">
+		<div class="w3-right" id="nav-view-on-big">
+			<div class="social-icon-nav">
+				<i class="fa fa-street-view"></i>
+			</div>
+			<div class="social-icon-nav">
+				<i class="fa fa-envelope"></i>
+			</div>
+			<div class="social-icon-nav">
+				<a href="https://www.instagram.com/laughingdharma/" target="_blank"><i class="fa fa-instagram"></i></a>
+			</div>
+			<div class="social-icon-nav">
+				<a href="https://www.youtube.com/channel/UCpB_fpq8yumUCBlAW96sAag" target="_blank"><i class="fa fa-youtube"></i></a>
+			</div>
+			<div class="social-icon-nav">
+				<a href="https://twitter.com/laughingdharma" target="_blank"><i class="fa fa-twitter"></i></a>
+			</div>
 			<div class="social-icon-nav">
 				<i class="fa fa-facebook"></i>
 			</div>
 			<div class="social-icon-nav">
-				<i class="fa fa-twitter"></i>
+				<i class="fa fa-whatsapp"></i>
 			</div>
 			<div class="social-icon-nav">
-				<i class="fa fa-youtube"></i>
-			</div>
-			<div class="social-icon-nav">
-				<i class="fa fa-instagram"></i>
+				<i class="fa fa-phone"></i>
 			</div>
 		</div>
+	</div>
+	<div class="phone-nav scroller">
+		<a href="#" target="_blank"><button class="w3-btn w3-round w3-margin-right"><i class="fa fa-phone"></i></button></a>
+		<a href="#" target="_blank"><button class="w3-btn w3-round w3-margin-right"><i class="fa fa-whatsapp"></i></button></a>
+		<a href="#" target="_blank"><button class="w3-btn w3-round w3-margin-right"><i class="fa fa-facebook"></i></button></a>
+		<a href="https://twitter.com/laughingdharma" target="_blank"><button class="w3-btn w3-round w3-margin-right"><i class="fa fa-twitter"></i></button></a>
+		<a href="https://www.youtube.com/channel/UCpB_fpq8yumUCBlAW96sAag" target="_blank"><button class="w3-btn w3-round w3-margin-right"><i class="fa fa-youtube"></i></button></a>
+		<a href="https://www.instagram.com/laughingdharma/" target="_blank"><button class="w3-btn w3-round w3-margin-right"><i class="fa fa-instagram"></i></button></a>
+		<a href="#" target="_blank"><button class="w3-btn w3-round w3-margin-right"><i class="fa fa-envelope"></i></button></a>
+		<a href="#" target="_blank"><button class="w3-btn w3-round w3-margin-right"><i class="fa fa-street-view"></i></button></a>
 	</div>
 	<div class="nav-2 pads">
 		<span class="big-nav-2">LAUGHING RELIGION</span><br>
 		<span class="small-nav-2">Where people meet their happy self.</span>
 	</div>
 </div>
+<script type="text/javascript">
+$(document).ready(function(){
+	if($(document).width()>950)
+	{
+		$("#nav-view-on-big").show();
+		$(".phone-nav").hide();
+	}
+	else
+	{
+		$(".phone-nav").show();
+		$("#nav-view-on-big").hide();
+	}
+});
+</script>
+
 <div class="w3-container flexbox-container">
 	<div class="w3-container flexbox-container-part w3-margin-bottom">
 		<img src="./images/1.jpg" class="flexbox-container-image">
@@ -538,18 +575,73 @@ $(".youtube-3").click(function(){
 	<div class="w3-third w3-padding">
 		Contact Info
 		<hr>
+		<a href="https://goo.gl/forms/CcU9uubMKvfvqYYz1" target="_blank"><button class="w3-round w3-border w3-margin-bottom w3-margin-right w3-padding cursor-hover w3-btn"><i class="fa fa-pencil"></i> Contact Form</button></a>
+		<br>
+		<button class="w3-round w3-border w3-margin-bottom w3-margin-right w3-padding cursor-hover w3-btn"><i class="fa fa-phone"></i> Call</button>
+		<button class="w3-round w3-border w3-margin-bottom w3-margin-right w3-padding cursor-hover w3-btn"><i class="fa fa-facebook"></i> Facebook</button>
+		<a href="https://twitter.com/laughingdharma" target="_blank"><button class="w3-round w3-border w3-margin-bottom w3-margin-right w3-padding cursor-hover w3-btn"><i class="fa fa-twitter"></i> Twitter</button></a>
+		<a href="https://www.youtube.com/channel/UCpB_fpq8yumUCBlAW96sAag" target="_blank"><button class="w3-round w3-border w3-margin-bottom w3-margin-right w3-padding cursor-hover w3-btn"><i class="fa fa-youtube"></i> YouTube</button></a>
+		<a href="https://www.instagram.com/laughingdharma/" target="_blank"><button class="w3-round w3-border w3-margin-bottom w3-margin-right w3-padding cursor-hover w3-btn"><i class="fa fa-instagram"></i> Instagram</button></a>
+		<button class="w3-round w3-border w3-margin-bottom w3-margin-right w3-padding cursor-hover w3-btn"><i class="fa fa-envelope"></i> E-Mail</button>
+		<button class="w3-round w3-border w3-margin-bottom w3-margin-right w3-padding cursor-hover w3-btn"><i class="fa fa-whatsapp"></i> WhatsApp</button>
+		<button class="w3-round w3-border w3-margin-bottom w3-margin-right w3-padding cursor-hover w3-btn"><i class="fa fa-street-view"></i> Address</button>
 	</div>
 </div>
 
-<div class="copyri pads">
+<div class="w3-container copyri pads">
 	<div class="w3-left">
 		&copy;&nbsp;&nbsp;All Rights Reserved.
 	</div>
 	<div class="w3-right">
-		Email: harishequal@gmail.com | Ph No. 0000 000 000
+		Email: laughingreligion@gmail.com | Ph No. 0000 000 000
 	</div>
 </div>
 
+<div class="fixed">
+	<a href="#" class="scrollup"><div class="top"><i class="fa fa-angle-up" style="margin-top: 1px;font-size: 22px;"></i><br>
+		<div style="margin-top:-5px">TOP</div>
+	</div></a>
+	<br><br>
+	<div class="total-query">
+		<div class="temp-query">&nbsp;Query? Ask Here&nbsp;&nbsp;&nbsp;<i class="fa fa-window-close w3-round cursor-hover" style="margin-top: 2px;" id="temp-query-close"></i></div>
+		<a href="https://goo.gl/forms/CcU9uubMKvfvqYYz1" target="_blank" class="query-form"><div class="query"><i class="fa fa-question"></i></div></a>
+	</div>
+</div>
+<script type="text/javascript">
+$(document).ready(function () {
+
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 100) {
+            $('.scrollup').fadeIn();
+        } else {
+            $('.scrollup').fadeOut();
+        }
+    });
+
+    $('.scrollup').click(function () {
+        $("html, body").animate({
+            scrollTop: 0
+        }, 600);
+        return false;
+    });
+
+});
+
+$(document).ready(function(){
+	$(".temp-query").toggle( "slide" )();
+});
+
+$("#temp-query-close").click(function(){
+	$(".temp-query").fadeOut();
+});
+
+if($(".temp-query").is(":hidden"))
+{
+	$(".query-form").hover(function(){
+		$(".temp-query").fadeIn();
+	});
+}
+</script>
 
 </body>
 </html>
